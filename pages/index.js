@@ -147,12 +147,13 @@ export default function Home ({ technologies }) {
 }
 
 export const getStaticProps = async () => {
-  const technologies = await getAllTechnologies()
+  const technologies = await getAllTechnologies();
 
   return {
     props: {
-      technologies
+      technologies,
     },
-    revalidate: 120
-  }
-}
+    revalidate: 120,
+  };
+};
+
