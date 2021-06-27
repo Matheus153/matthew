@@ -19,6 +19,7 @@ import { getAllTechnologies } from '../lib/dato-cms'
 const Cover = ({ technologies }) => {
   const [currentTechnologies, setTechnologies] = useState(technologies);
   const bgColor = useColorModeValue('#FFFFFF', '#1A202C');
+  const color = useColorModeValue('#1a202c', '#EDEEEE')
 
   const handleShowAllTechnologies = () => {
     const tecs = currentTechnologies.map((t) => {
@@ -33,7 +34,7 @@ const Cover = ({ technologies }) => {
   ).length;
 
   return (
-    <Box bgColor={bgColor}>
+    <Box bgColor={bgColor} color={color}>
       <Flex justifyContent="center" alignItems="center" py={20}>
         <Flex
           px={[4, 8]}
