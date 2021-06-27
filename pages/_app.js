@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-import React from 'react'
 import Head from 'next/head'
 import { ChakraProvider, extendTheme, CSSReset } from '@chakra-ui/react'
 import { Global, css } from '@emotion/react'
