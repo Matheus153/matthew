@@ -10,7 +10,7 @@ import {
   useDisclosure,
   Text,
 } from '@chakra-ui/react';
-import useAuth from 'src/hooks/useAuth';
+import useAuth from '../hooks/useAuth';
 
 const AuthModal = ({ isOpen, onClose }) => {
   const { signinGitHub, signinGoogle } = useAuth();
