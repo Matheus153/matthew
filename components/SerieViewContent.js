@@ -19,9 +19,9 @@ import {
   } from '@chakra-ui/react';
   import { MdCheckCircle, MdPlayCircleOutline } from 'react-icons/md';
   import Image from 'next/image';
-  import useAuth from 'src/hooks/useAuth';
+  import useAuth from '../hooks/useAuth';
   import { useRouter } from 'next/router';
-  import withAuthModal from 'src/components/Auth';
+  import withAuthModal from './Auth';
   
   const SerieViewContent = ({ serie, openAuthModal }) => {
     const { user } = useAuth();

@@ -7,7 +7,7 @@ import {
     Button,
   } from '@chakra-ui/react';
   import { useRouter } from 'next/router';
-  import useAuth from 'src/hooks/useAuth';
+  import useAuth from '../hooks/useAuth';
   
   const SerieViewHeader = ({ serie }) => {
     const bg = useColorModeValue('#FFFFFF', '#1A202C');
