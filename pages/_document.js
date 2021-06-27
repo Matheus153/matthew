@@ -1,0 +1,28 @@
+
+import React from 'react'
+import theme from '../styles/theme'
+import { ColorModeScript } from '@chakra-ui/color-mode'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
+
+class MyDocument extends Document {
+  render () {
+    return (
+      <Html lang="en">
+        <Head>
+          <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+            rel="stylesheet"
+          />
+        </Head>
+        <body>
+          <ColorModeScript initialColorMode={theme.initialColorMode}/>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    )
+  }
+}
+
+export default MyDocument
