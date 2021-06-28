@@ -40,7 +40,7 @@ export function AuthProvider ({ children }) {
       });
   } else {
       cookie.remove('matthew-auth');
-  }
+    }
   }
 
   const signinGitHub = async () => {
@@ -82,10 +82,6 @@ export function AuthProvider ({ children }) {
     }
   }
 
-  useEffect(() => {
-    const unsubscribe = firebase.auth().onIdTokenChanged(handleUser)
-    return () => unsubscribe()
-  }, [])
 
   return <AuthContext.Provider value={{
     user,
@@ -93,8 +89,7 @@ export function AuthProvider ({ children }) {
     signinGitHub,
     signinGoogle,
     signout
-  }}>
-        {children}</AuthContext.Provider>
+  }}>{children}</AuthContext.Provider>
 }
 
 export const AuthConsumer = AuthContext.Consumer
