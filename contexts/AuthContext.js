@@ -85,7 +85,7 @@ export function AuthProvider ({ children }) {
   useEffect(() => {
     const unsubscribe = firebase.auth().onIdTokenChanged(handleUser)
     return () => unsubscribe()
-  })
+  }, [])
 
   return <AuthContext.Provider value={{
     user,
