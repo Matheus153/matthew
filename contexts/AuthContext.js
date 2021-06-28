@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react'
+import { createContext, useState, useEffect } from 'react'
 import Router from 'next/router'
 import firebase from '../lib/firebase'
 import cookie from 'js-cookie'
@@ -32,6 +32,7 @@ export function AuthProvider ({ children }) {
     return false
   }
 
+  // Trabalhando com Ccokies 
   const setSession = (session) => {
     if (session) {
       cookie.set('matthew-auth', session, {
@@ -80,6 +81,11 @@ export function AuthProvider ({ children }) {
       setLoading(false)
     }
   }
+
+  useEffect(() => {
+    const unsubscribe = firebase.auth().onIdTokenChanged(handleUser)
+    return () => unsubscribe()
+  })
 
   return <AuthContext.Provider value={{
     user,
