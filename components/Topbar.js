@@ -49,7 +49,7 @@ function Topbar({ openAuthModal }) {
           <NextLink href="/" passHref>
             <Link>
               <Heading size="md" mr={4} display={['none', 'block']}>
-                srnovato.com
+                lucasnhimi.io
               </Heading>
             </Link>
           </NextLink>

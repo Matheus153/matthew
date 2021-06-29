@@ -8,14 +8,14 @@ function Player() {
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{
             __html: `
-              if (!document.cookie || !document.cookie.includes('matthew-auth')) {
+              if (!document.cookie || !document.cookie.includes('lucasnhimi-auth')) {
                 window.location.href = "/"
               }
             `,
           }}
         />
       </Head>
-      Player
+      player
     </div>
   )
 }
