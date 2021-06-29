@@ -8,7 +8,7 @@ function Player() {
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{
             __html: `
-              if (!document.cookie || !document.cookie.includes('lucasnhimi-auth')) {
+              if (!document.cookie || !document.cookie.includes('matthew-auth')) {
                 window.location.href = "/"
               }
             `,
