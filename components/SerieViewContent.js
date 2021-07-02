@@ -99,7 +99,7 @@ import {
                                       <Link>{episode.name}</Link>
                                     </Text>
                                   </Flex>
-                                  <Text fontSize="sm">{episode.videoTime}</Text>
+                                  <Text fontSize="sm">{episode.videosTime}</Text>
                                 </Flex>
                               </ListItem>
                             ))}
