@@ -51,17 +51,17 @@ const Cover = ({ technologies }) => {
             mb={4}
             fontWeight="xBold"
           >
-            Aprenda programação
-            <Box>direto ao ponto </Box>
+            Bem-vindo a página.
+            <Box>Direto ao ponto </Box>
             <Box bgGradient="linear(to-l, #7928CA,#FF0080)" bgClip="text">
               100% free.
             </Box>
           </Heading>
           <Text fontSize={{ base: '16px', md: '20px', lg: '22px' }}>
             <Box>
-              Mantenha seus conhecimentos atualizados com as mais novas{' '}
+              Um espaço interativo em que você pode fazer parte. {' '}
             </Box>
-            <Box>tecnologias que estão disponíveis no mercado!</Box>
+            <Box>Tecnologias que estão disponíveis no mercado!</Box>
           </Text>
           <Box>
             <Button

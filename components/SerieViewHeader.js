@@ -16,9 +16,10 @@ import {
   
     const handleStartNow = () => {
       if (!user) {
-        
+        alert("Entre para para acessar os conteúdos")
       } else {
-        router.push(`/player/${serie.slug}`);
+        //router.push(`/player/${serie.slug}`)
+        router.push(`https://select-quiz.vercel.app/`);
       }
     };
   
