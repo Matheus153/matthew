@@ -52,7 +52,7 @@ import {
                 <Divider />
                 <Box my={4}>
                   <Heading as="h3" size="md" mb={3}>
-                    O que você irá aprender
+                    O que você irá ver
                   </Heading>
                   <List spacing={3}>
                     {serie.features?.map((feature) => (
