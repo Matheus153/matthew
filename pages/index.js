@@ -52,8 +52,8 @@ const Cover = ({ technologies }) => {
             fontWeight="xBold"
           >
             Bem-vindo a página.
-            <Box>Direto ao ponto </Box>
-            <Box bgGradient="linear(to-l, #7928CA,#FF0080)" bgClip="text">
+            <Box>Conteúdos disponíveis</Box>
+            <Box bgGradient="linear(to-l, #fffe41, #01449f)" bgClip="text">
               100% free.
             </Box>
           </Heading>
